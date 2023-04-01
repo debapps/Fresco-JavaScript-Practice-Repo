@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <title>Stay Invoice</title>
+</head>
+<body>
+   
+    <div class="invoiceForm" >
+      
+        <div class="w3-container w3-purple" >
+        <h3>Enter Details</h3>
+      </div>
+
+      <form class="w3-container" id="invoiceForm">
+        
+        <br>
+        <table>
+            <tr>
+                <td><label>Name:</label></td>
+                 <td colspan="3"><input type="text" id="name" placeholder="Enter Name..."></td>
+            </tr>
+
+            <tr>
+                <td><label>Mobile</label></td>
+                <td><input type="tel" id="mobile" placeholder="Enter Mobile No..."></td>
+                <td><label>Email</label></td>
+                <td><input type="email" id = "email" placeholder="Enter Email Id..."></td>
+            </tr>
+
+            <tr><td><hr></td></tr>
+            <tr>
+                <td><label>In Date:</label></td>
+                <td><input type="date" id="inDate"></td>
+                <td><label>In Time:</label></td>
+                <td><input type="time" id="inTime"></td>
+            </tr>
+
+            <tr>
+                <td><label>Out Date:</label></td>
+                <td><input type="date" id="outDate"></td>
+                <td><label>Out Time:</label></td>
+                <td><input type="time" id="outTime"></td>
+            </tr>
+        </table>
+
+        <p>
+            <div class="w3-center">
+                <div class="w3-bar">
+                  
+                  <button class="w3-button w3-purple" id="billGenerate" type="button" onclick="generateBill()">Generate Bill</button>
+                  <button class="w3-button w3-light-gray" id="formClear" type="reset">Clear</button>
+                  
+                </div>
+                </div>
+        </p>
+
+        <p>
+            <div class="w3-center">
+                <label>No:of Days Stayed: </label>
+                <label id="days">______</label><br><br>
+                <label>Total Amount: </label><label>$</label>
+                <label id="amount">______</label>
+            </div>
+        </p>
+
+       
+
+   
+      </form>
+     
+
+    </div>
+
+  
+  </body>
+  <script type="text/javascript" src="./app.js"></script>
+
+</html>
